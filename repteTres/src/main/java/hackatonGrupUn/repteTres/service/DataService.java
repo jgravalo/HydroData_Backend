@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import hackatonGrupUn.repteTres.model.Data;
 import hackatonGrupUn.repteTres.jsonUtils.FeatureWrapper;
 import hackatonGrupUn.repteTres.jsonUtils.Root;
+import hackatonGrupUn.repteTres.repository.DataRepository;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service; // 👈 Importante
 import java.io.IOException;
@@ -15,6 +16,11 @@ public class DataService {
 
 
     private final ObjectMapper objectMapper = new ObjectMapper();
+    private final DataRepository dataRepository;
+
+    public DataService(DataRepository dataRepository) {
+        this.dataRepository = dataRepository;
+    }
 
     public List<Data> loadWaterConsumptionData(String jsonFilePath) throws IOException {
 
@@ -22,8 +28,10 @@ public class DataService {
 
         Root rootObject = objectMapper.readValue(resource.getInputStream(), Root.class);
 
-        return rootObject.getFeatures().stream()
+        List<Data> dataList = rootObject.getFeatures().stream()
                 .map(FeatureWrapper::getData)
                 .collect(Collectors.toList());
+
+        return dataRepository.saveAll(dataList);
     }
 }
