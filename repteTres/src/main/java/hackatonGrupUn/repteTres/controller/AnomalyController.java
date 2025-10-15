@@ -19,7 +19,7 @@ public class AnomalyController {
         this.anomalyService = anomalyService;
     }
 
-    @GetMapping
+    @GetMapping (produces = "application/json")
     public ResponseEntity<List<AnomalyDto>> getAllAnomalies() {
         List<AnomalyDto> anomalies = anomalyService.getAllAnomalies();
         return ResponseEntity.ok(anomalies);

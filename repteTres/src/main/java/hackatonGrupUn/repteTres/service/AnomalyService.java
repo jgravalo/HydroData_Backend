@@ -29,23 +29,21 @@ public class AnomalyService {
     public List<AnomalyDto> getAllAnomalies() {
         List<AnomalyDto> anomalies = new ArrayList<>();
         try {
-            InputStream inputStream = resourceLoader.getResource("classpath:2015_consum_aigua.geojson").getInputStream();
+            InputStream inputStream = resourceLoader.getResource("classpath:json/2015_consum_aigua.json").getInputStream();
             JsonNode rootNode = objectMapper.readTree(inputStream);
-            JsonNode featuresNode = rootNode.path("features");
 
-            if (featuresNode.isArray()) {
-                for (JsonNode feature : featuresNode) {
-                    JsonNode properties = feature.path("properties");
-                    String location = properties.path("location").asText();
-                    String zone = properties.path("zone").asText();
-                    String description = properties.path("description").asText();
+            if (rootNode.isArray()) {
+                for (JsonNode node : rootNode) {
+                    String location = node.path("barribcn").asText();
+                    String zone = node.path("dtebcnnom").asText();
+                    String description = "Consumo: " + node.path("lhabDia").asText() + " litros/día";
                     LocalDateTime timestamp = LocalDateTime.now();
 
                     anomalies.add(new AnomalyDto(location, zone, description, timestamp));
                 }
             }
         } catch (IOException e) {
-            logger.error("Error reading or processing GeoJSON file: {}", e.getMessage(), e);
+            logger.error("Error reading or processing JSON file: {}", e.getMessage(), e);
         }
         return anomalies;
     }
