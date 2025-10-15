@@ -1,7 +1,13 @@
 package hackatonGrupUn.repteTres.dto;
 
 import java.time.LocalDateTime;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class AnomalyDto {
 
     private String location;
@@ -9,28 +15,4 @@ public class AnomalyDto {
     private String description;
     private LocalDateTime timestamp;
 
-    public AnomalyDto() {}
-
-    public AnomalyDto(String location, String zone, String description, LocalDateTime timestamp) {
-        this.location = location;
-        this.zone = zone;
-        this.description = description;
-        this.timestamp = timestamp;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public String getZone() {
-        return zone;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public LocalDateTime getTimestamp() {
-        return timestamp;
-    }
 }
