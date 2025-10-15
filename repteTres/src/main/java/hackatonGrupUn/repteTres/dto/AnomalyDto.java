@@ -1,4 +1,4 @@
-package main.java.hackatonGrupUn.repteTres.dto;
+package hackatonGrupUn.repteTres.dto;
 
 public class AnomalyDto {
 }

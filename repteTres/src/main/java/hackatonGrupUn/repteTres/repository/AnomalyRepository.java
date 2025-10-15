@@ -1,4 +1,4 @@
-package main.java.hackatonGrupUn.repteTres.repository;
+package hackatonGrupUn.repteTres.repository;
 
 public class AnomalyRepository {
 }
