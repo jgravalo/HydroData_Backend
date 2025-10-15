@@ -49,3 +49,10 @@ All endpoints are served from the host running on port **9000**.
 | **Data** | `/hydraulic/api/v1/averages` | `GET` | Calculates and returns the average water consumption per district. | List of calculated averages. |
 | **User** | `/api/users` | `GET` | Retrieves all registered users (Requires authentication/authorization). | List of `User` objects.      |
 | **Auth** | `/login` | `POST` | Authenticates a user with credentials (`LoginRequestDto`). | Success response.            |
+
+## 🧑‍🔧 BackEnd Authors
+Alfonso Cocinas -> https://github.com/acocinas
+
+Toni Romero -> https://github.com/ToniR90
+
+Isaac Díez -> https://github.com/isaac-diez
