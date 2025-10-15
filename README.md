@@ -1,4 +1,4 @@
-# 💧 Repte Tres Backend (Hydraulic Data System)
+# 💧 Repte 3: Gestió sostenible dels recursos hídrics a Catalunya
 
 This repository contains the Spring Boot API developed for managing water consumption data, anomalies, and user authentication. It uses **H2** as an in-memory database for the development phase and follows a **JPA and REST-based architecture** for seamless communication with the frontend.
 
@@ -49,6 +49,9 @@ All endpoints are served from the host running on port **9000**.
 | **Data** | `/hydraulic/api/v1/averages` | `GET` | Calculates and returns the average water consumption per district. | List of calculated averages. |
 | **User** | `/api/users` | `GET` | Retrieves all registered users (Requires authentication/authorization). | List of `User` objects.      |
 | **Auth** | `/login` | `POST` | Authenticates a user with credentials (`LoginRequestDto`). | Success response.            |
+
+## FrontEnd Repository
+Here is the frontend repository: https://github.com/JlBestMc/HackathonRepte3_Frontend
 
 ## 🧑‍🔧 Team Authors
 Alfonso Cocinas -> https://github.com/acocinas
