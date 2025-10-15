@@ -50,9 +50,17 @@ All endpoints are served from the host running on port **9000**.
 | **User** | `/api/users` | `GET` | Retrieves all registered users (Requires authentication/authorization). | List of `User` objects.      |
 | **Auth** | `/login` | `POST` | Authenticates a user with credentials (`LoginRequestDto`). | Success response.            |
 
-## 🧑‍🔧 BackEnd Authors
+## 🧑‍🔧 Team Authors
 Alfonso Cocinas -> https://github.com/acocinas
 
 Toni Romero -> https://github.com/ToniR90
 
 Isaac Díez -> https://github.com/isaac-diez
+
+Jesús Grávalos -> https://github.com/jgravalo
+
+Juan Luis Rodríguez -> https://github.com/JlBestMc
+
+Antonio Felices -> https://github.com/antoniofelices
+
+Omar Salvat -> https://github.com/omarsaou
