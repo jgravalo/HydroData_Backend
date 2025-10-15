@@ -12,6 +12,20 @@ This repository contains the Spring Boot API developed for managing water consum
 
 * **Docker** (optional, for containerized deployment)
 
+## 🛠 Compilation and Execution (Maven)
+
+Ensure all dependencies are downloaded (`mvn install`).
+
+Compile the project:
+```
+mvn clean package
+```
+Run the project (the server starts on port 9000):
+```
+java -jar target/repteTres-0.0.1-SNAPSHOT.jar
+```
+
+
 ## ⚙️ Configuration and Database
 
 The application is configured to run on port **9000**.
