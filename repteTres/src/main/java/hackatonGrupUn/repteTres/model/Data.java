@@ -12,8 +12,8 @@ public class Data {
     @JsonProperty("barribcn")
     private String barrioBcn;
 
-    @JsonProperty("sum_pobl2024")
-    private int sumPoblacion2024;
+    @JsonProperty("sum_pobl20")
+    private int sumPoblacion20;
 
     @JsonProperty("dtebcnnom")
     private String dteBcnNom;
