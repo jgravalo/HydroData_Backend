@@ -16,12 +16,6 @@ public class DataService {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    /**
-     * Lee un archivo GeoJSON del classpath y extrae una lista limpia de datos.
-     * @param jsonFilePath Ruta relativa al classpath (e.g., /json/file.json).
-     * @return Una lista de objetos Data.
-     * @throws IOException Si hay un problema al leer el archivo.
-     */
     public List<Data> loadWaterConsumptionData(String jsonFilePath) throws IOException {
 
         ClassPathResource resource = new ClassPathResource(jsonFilePath);
