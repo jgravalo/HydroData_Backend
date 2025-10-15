@@ -1,16 +1,15 @@
 package hackatonGrupUn.repteTres.controller;
 
-import hackatonGrupUn.repteTres.dto.AnomalyDto;
 import hackatonGrupUn.repteTres.service.AnomalyService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+import java.util.Map;
 
 @RestController
-@RequestMapping("hydraulic/api/v1/anomalies")
+@RequestMapping("hydraulic/api/v1/averages")
 public class AnomalyController {
 
     private final AnomalyService anomalyService;
@@ -20,8 +19,8 @@ public class AnomalyController {
     }
 
     @GetMapping
-    public ResponseEntity<List<AnomalyDto>> getAllAnomalies() {
-        List<AnomalyDto> anomalies = anomalyService.getAllAnomalies();
-        return ResponseEntity.ok(anomalies);
+    public ResponseEntity<Map<String, Double>> getDistrictAverages() {
+        Map<String, Double> averages = anomalyService.getDistrictAverages();
+        return ResponseEntity.ok(averages);
     }
 }
