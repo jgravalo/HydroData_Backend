@@ -2,8 +2,8 @@ package hackatonGrupUn.repteTres.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import hackatonGrupUn.repteTres.model.Data;
-import hackatonGrupUn.repteTres.repo.FeatureWrapper;
-import hackatonGrupUn.repteTres.repo.Root;
+import hackatonGrupUn.repteTres.jsonUtils.FeatureWrapper;
+import hackatonGrupUn.repteTres.jsonUtils.Root;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service; // 👈 Importante
 import java.io.IOException;
