@@ -12,6 +12,9 @@ WORKDIR /app
 # Esto aprovecha el caching de Docker: si el pom.xml/build.gradle no cambian, no vuelve a descargar dependencias.
 COPY .mvn/ .mvn
 COPY mvnw pom.xml ./
+
+RUN chmod +x ./mvnw
+
 RUN ./mvnw dependency:go-offline -B
 
 # Copia el código fuente restante
