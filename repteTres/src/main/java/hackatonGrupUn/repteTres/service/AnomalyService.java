@@ -1,4 +1,4 @@
-package main.java.hackatonGrupUn.repteTres.service;
+package hackatonGrupUn.repteTres.service;
 
 public class AnomalyService {
 }
