@@ -17,7 +17,7 @@ public class DataController {
         this.dataService = dataService;
     }
 
-    @GetMapping("/api/consumo-agua")
+    @GetMapping("hydraulic/api/v1/data")
     public List<Data> getConsumptionData() {
         try {
             return dataService.loadWaterConsumptionData("/json/2015_consum_aigua.json");
