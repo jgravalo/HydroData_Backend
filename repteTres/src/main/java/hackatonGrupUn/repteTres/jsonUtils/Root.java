@@ -8,7 +8,6 @@ public class Root {
 
     private List<FeatureWrapper> features;
 
-    // Getter y Setter
     public List<FeatureWrapper> getFeatures() {
         return features;
     }

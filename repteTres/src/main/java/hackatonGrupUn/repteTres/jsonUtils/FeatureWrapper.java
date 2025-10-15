@@ -10,7 +10,6 @@ public class FeatureWrapper {
     @JsonProperty("properties")
     private Data data;
 
-    // Getter y Setter
     public Data getData() {
         return data;
     }
