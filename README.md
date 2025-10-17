@@ -68,16 +68,16 @@ All endpoints are served from the host running on port **9000**.
 Here is the frontend repository: https://github.com/JlBestMc/HackathonRepte3_Frontend
 
 ## 🧑‍🔧 Team Authors
-Alfonso Cocinas -> https://github.com/acocinas
+[Alfonso Cocinas](https://github.com/acocinas)
 
-Toni Romero -> https://github.com/ToniR90
+[Toni Romero](https://github.com/ToniR90)
 
-Isaac Díez -> https://github.com/isaac-diez
+[Isaac Díez](https://github.com/isaac-diez)
 
-Jesús Grávalos -> https://github.com/jgravalo
+[Jesús Grávalos](https://github.com/jgravalo)
 
-Juan Luis Rodríguez -> https://github.com/JlBestMc
+[Juan Luis Rodríguez](https://github.com/JlBestMc)
 
-Antonio Felices -> https://github.com/antoniofelices
+[Antonio Felices](https://github.com/antoniofelices)
 
-Omar Salvat -> https://github.com/omarsaou
+[Omar Salvat](https://github.com/omarsaou)
